@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primes Auto Service | Charlotte's One-Stop Collision Repair &amp; Custom Finishing Shop</title>
+<meta name="description" content="Collision repair, paint work, dent repair, ceramic coating, powder coating, and custom finishes in Charlotte NC. Call 980-222-9928 for an estimate.">
+<meta name="keywords" content="collision repair Charlotte NC, auto body shop Charlotte, ceramic coating Charlotte, powder coating, paintless dent repair, bumper repair, insurance claim repair Charlotte">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://primeauto704.com">
+<meta property="og:title" content="Primes Auto Service | Collision Repair &amp; Custom Finishes in Charlotte NC">
+<meta property="og:description" content="Charlotte's one-stop shop for collision repair, paint work, ceramic coating, powder coating, and custom finishes. Call 980-222-9928.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://primeauto704.com">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --white:#ffffff;--off-white:#f7f7f8;--light:#eeeef0;--mid:#d4d4d8;
+  --dark:#18181b;--darker:#09090b;--muted:#71717a;--body:#3f3f46;
+  --accent:#c8102e;--accent-hover:#a80d25;--accent-light:rgba(200,16,46,.06);
+  --accent-border:rgba(200,16,46,.12);
+  --gold:#e8a500;
+  --font-display:'Oswald',sans-serif;
+  --font-body:'Source Sans 3',sans-serif;
+  --header-h:70px;--max-w:1140px;
+  --radius:10px;--radius-lg:16px;
+  --shadow-sm:0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
+  --shadow-md:0 4px 16px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);
+  --shadow-lg:0 12px 40px rgba(0,0,0,.08);
+  --transition:.25s cubic-bezier(.4,0,.2,1)
+}
+html{scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
+body{font-family:var(--font-body);background:var(--white);color:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button,input,textarea{font-family:inherit}
+
+/* ─── HEADER ─── */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--light);height:var(--header-h)}
+.header-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:100%}
+.header-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
+.header-logo img{height:42px;width:auto}
+.header-logo-text{font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:2px;color:var(--dark);text-transform:uppercase}
+.header-cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:10px 22px;border-radius:8px;font-family:var(--font-display);font-weight:600;font-size:14px;letter-spacing:1px;text-transform:uppercase;transition:var(--transition);white-space:nowrap}
+.header-cta:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 12px rgba(200,16,46,.25)}
+
+/* ─── TOP BAR ─── */
+.top-bar{margin-top:var(--header-h);background:var(--darker);text-align:center;padding:10px 24px}
+.top-bar p{font-family:var(--font-display);font-size:13px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.top-bar strong{color:#fff;font-weight:700}
+
+/* ─── HERO ─── */
+.hero{padding:80px 24px 70px;text-align:center;background:var(--white);position:relative}
+.hero::after{content:'';position:absolute;bottom:0;left:5%;right:5%;height:1px;background:var(--light)}
+.hero-inner{max-width:880px;margin:0 auto}
+.hero h1{font-family:var(--font-display);font-size:clamp(36px,6.5vw,64px);font-weight:700;line-height:1.08;letter-spacing:1px;text-transform:uppercase;color:var(--dark);margin-bottom:18px}
+.hero h1 span{color:var(--accent)}
+.hero-sub{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:600px;margin:0 auto 40px;font-weight:300;line-height:1.6}
+/* Rating */
+.rating-block{margin-bottom:36px}
+.rating-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:6px}
+.rating-num{font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--dark);line-height:1}
+.rating-stars{display:flex;gap:2px}
+.rating-stars .s{color:var(--gold);font-size:24px;line-height:1}
+.rating-label{font-family:var(--font-display);font-size:14px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.rating-sub{font-size:14px;color:var(--muted);font-weight:300;margin-top:6px;max-width:440px;margin-left:auto;margin-right:auto}
+/* Reviews */
+.reviews-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:780px;margin:0 auto 44px}
+.rev{background:var(--off-white);border:1px solid var(--light);border-radius:var(--radius);padding:20px;text-align:left;transition:var(--transition);position:relative}
+.rev:hover{box-shadow:var(--shadow-md);border-color:var(--mid);transform:translateY(-2px)}
+.rev-stars{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:8px}
+.rev p{font-size:14px;color:var(--body);line-height:1.55;font-weight:400}
+.rev .rev-from{margin-top:10px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
+.rev .g-mark{position:absolute;top:14px;right:14px;width:18px;height:18px;opacity:.2}
+/* CTA */
+.hero-cta{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;padding:18px 44px;border-radius:8px;font-family:var(--font-display);font-size:20px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:var(--transition);box-shadow:0 4px 20px rgba(200,16,46,.2)}
+.hero-cta:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 30px rgba(200,16,46,.3)}
+.hero-meta{margin-top:22px;font-size:13px;color:var(--muted);line-height:1.8}
+.hero-meta strong{color:var(--body);font-weight:600}
+
+/* ─── VIDEO TESTIMONIAL ─── */
+.video-section{padding:60px 24px;background:var(--off-white);text-align:center}
+.video-section .section-inner{max-width:760px}
+.video-wrap{margin-top:28px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--light);box-shadow:var(--shadow-lg);background:#000;position:relative}
+.video-wrap video{width:100%;height:auto;display:block}
+
+/* ─── SECTION ─── */
+.section{padding:80px 24px}
+.section--gray{background:var(--off-white)}
+.section-inner{max-width:var(--max-w);margin:0 auto}
+.section-tag{font-family:var(--font-display);font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:10px}
+.section-title{font-family:var(--font-display);font-size:clamp(28px,4.5vw,42px);font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);margin-bottom:16px;line-height:1.1}
+.section-desc{font-size:16px;color:var(--muted);max-width:600px;line-height:1.7;font-weight:300}
+.section-desc+.section-desc{margin-top:12px}
+
+/* ─── INSURANCE ─── */
+.adv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:32px}
+.adv-card{background:var(--white);border:1px solid var(--light);border-radius:var(--radius);padding:28px 24px;transition:var(--transition)}
+.adv-card:hover{box-shadow:var(--shadow-md);border-color:var(--mid)}
+.adv-card h4{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--dark);margin-bottom:8px;letter-spacing:.5px;text-transform:uppercase}
+.adv-card p{font-size:15px;color:var(--muted);line-height:1.6;font-weight:300}
+
+/* ─── WHY US ─── */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin-top:32px}
+.why-item{display:flex;gap:14px;padding:22px;background:var(--off-white);border:1px solid var(--light);border-radius:var(--radius);transition:var(--transition)}
+.why-item:hover{box-shadow:var(--shadow-sm);border-color:var(--mid)}
+.why-dot{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:var(--accent-light);border:1px solid var(--accent-border);border-radius:8px;font-size:18px}
+.why-item h4{font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--dark);letter-spacing:.3px;text-transform:uppercase;margin-bottom:2px}
+.why-item p{font-size:13px;color:var(--muted);font-weight:300;line-height:1.5}
+
+/* ─── SERVICES ─── */
+.srv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px;margin-top:32px}
+.srv{background:var(--white);border:1px solid var(--light);border-radius:var(--radius);padding:24px 20px;text-align:center;transition:var(--transition);position:relative;overflow:hidden}
+.srv::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--accent);transform:scaleX(0);transition:var(--transition)}
+.srv:hover::after{transform:scaleX(1)}
+.srv:hover{box-shadow:var(--shadow-md);border-color:var(--mid);transform:translateY(-2px)}
+.srv-icon{font-size:26px;margin-bottom:12px}
+.srv h4{font-family:var(--font-display);font-size:15px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--dark);margin-bottom:6px}
+.srv p{font-size:13px;color:var(--muted);line-height:1.5;font-weight:300}
+
+/* ─── SPECIALTY ─── */
+.spec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:32px}
+.spec{background:var(--white);border:1px solid var(--light);border-radius:var(--radius-lg);padding:32px 28px;transition:var(--transition)}
+.spec:hover{box-shadow:var(--shadow-md);border-color:var(--accent-border)}
+.spec-badge{display:inline-block;font-family:var(--font-display);font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);background:var(--accent-light);border:1px solid var(--accent-border);padding:3px 10px;border-radius:4px;font-weight:600;margin-bottom:12px}
+.spec h4{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--dark);letter-spacing:.5px;margin-bottom:10px;text-transform:uppercase}
+.spec p{font-size:14px;color:var(--muted);line-height:1.7;font-weight:300}
+.spec p+p{margin-top:8px}
+
+/* ─── GALLERY ─── */
+.masonry{columns:2;column-gap:16px;margin-top:32px}
+.m-item{break-inside:avoid;margin-bottom:16px;background:var(--white);border:1px solid var(--light);border-radius:var(--radius);overflow:hidden;transition:var(--transition);cursor:pointer}
+.m-item:hover{box-shadow:var(--shadow-lg);border-color:var(--mid);transform:translateY(-3px)}
+.m-item img{width:100%;height:auto;display:block}
+.m-info{padding:14px 16px}
+.m-info .m-tag{display:inline-block;font-family:var(--font-display);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:var(--accent-light);padding:2px 8px;border-radius:3px;font-weight:600;margin-bottom:6px}
+.m-info h4{font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--dark);letter-spacing:.3px;text-transform:uppercase;margin-bottom:2px}
+.m-info p{font-size:12px;color:var(--muted);font-weight:300;line-height:1.4}
+/* Lightbox */
+.lb{display:none;position:fixed;inset:0;z-index:2001;background:rgba(0,0,0,.88);backdrop-filter:blur(10px);align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-width:90vw;max-height:85vh;border-radius:var(--radius);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb-x{position:absolute;top:20px;right:24px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.4);color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+.lb-x:hover{border-color:var(--accent);color:var(--accent)}
+.lb-cap{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);text-align:center}
+.lb-cap h4{font-family:var(--font-display);font-size:16px;font-weight:700;color:#fff;margin-bottom:2px}
+.lb-cap span{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+
+/* ─── PROCESS ─── */
+.steps{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px;counter-reset:s}
+.step{flex:1 1 170px;background:var(--white);border:1px solid var(--light);border-radius:var(--radius);padding:26px 18px;text-align:center;counter-increment:s;transition:var(--transition)}
+.step:hover{box-shadow:var(--shadow-sm)}
+.step::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:38px;height:38px;background:var(--accent);color:#fff;font-family:var(--font-display);font-size:20px;font-weight:700;border-radius:50%;margin:0 auto 12px}
+.step h4{font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--dark)}
+
+/* ─── FORM ─── */
+.form-section{background:var(--off-white)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:32px}
+.form-info h3{font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--dark);letter-spacing:.5px;text-transform:uppercase;margin-bottom:14px}
+.form-info p{font-size:15px;color:var(--muted);line-height:1.7;font-weight:300;margin-bottom:20px}
+.fi{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);margin-bottom:10px}
+.fi .fi-icon{flex-shrink:0;width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:var(--accent-light);border:1px solid var(--accent-border);border-radius:8px;font-size:15px}
+.est-form{background:var(--white);border:1px solid var(--light);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm)}
+.est-form h3{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--dark);letter-spacing:.5px;text-transform:uppercase;margin-bottom:20px;text-align:center}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.fg input,.fg textarea{width:100%;padding:11px 14px;background:var(--off-white);border:1px solid var(--light);border-radius:8px;color:var(--dark);font-size:14px;transition:var(--transition)}
+.fg input:focus,.fg textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.fg textarea{resize:vertical;min-height:90px}
+.fg input[type="file"]{padding:9px;cursor:pointer}
+.fg input[type="file"]::file-selector-button{background:var(--accent);color:#fff;border:none;padding:5px 12px;border-radius:4px;font-family:var(--font-display);font-weight:600;font-size:11px;letter-spacing:.5px;text-transform:uppercase;cursor:pointer;transition:var(--transition)}
+.fg input[type="file"]::file-selector-button:hover{background:var(--accent-hover)}
+.form-btn{width:100%;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:8px;font-family:var(--font-display);font-size:16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:var(--transition);margin-top:6px}
+.form-btn:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 12px rgba(200,16,46,.25)}
+.form-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-note{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
+.form-status{text-align:center;padding:10px;border-radius:8px;margin-top:10px;font-size:13px;font-weight:500;display:none}
+.form-status.success{display:block;background:rgba(34,197,94,.08);color:#16a34a;border:1px solid rgba(34,197,94,.15)}
+.form-status.error{display:block;background:var(--accent-light);color:var(--accent);border:1px solid var(--accent-border)}
+
+/* ─── MAP ─── */
+.map-wrap{margin-top:28px;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--light);box-shadow:var(--shadow-sm)}
+.map-wrap iframe{width:100%;height:380px;border:none;display:block}
+.loc-row{display:flex;flex-wrap:wrap;gap:28px;margin-top:28px;align-items:center}
+.loc-addr h4{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--dark);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.loc-addr p{font-size:14px;color:var(--muted);font-weight:300}
+.dir-btn{display:inline-flex;align-items:center;gap:8px;background:var(--off-white);border:1px solid var(--light);padding:10px 20px;border-radius:8px;font-family:var(--font-display);font-weight:600;font-size:13px;letter-spacing:.5px;text-transform:uppercase;color:var(--dark);transition:var(--transition)}
+.dir-btn:hover{border-color:var(--accent);color:var(--accent);box-shadow:var(--shadow-sm)}
+
+/* ─── FINAL CTA ─── */
+.final-cta{text-align:center;padding:80px 24px;background:var(--darker);color:#fff}
+.final-cta .section-tag{color:rgba(255,255,255,.4)}
+.final-cta .section-title{color:#fff}
+.final-cta p{font-size:16px;color:rgba(255,255,255,.55);max-width:500px;margin:0 auto 28px;font-weight:300}
+.final-cta .hero-cta{box-shadow:0 4px 20px rgba(200,16,46,.35)}
+
+/* ─── FOOTER ─── */
+.footer{background:var(--darker);border-top:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:center}
+.footer p{font-size:13px;color:rgba(255,255,255,.35);font-weight:300}
+.footer a{color:rgba(255,255,255,.5);transition:var(--transition)}.footer a:hover{color:var(--accent)}
+
+/* ─── MOBILE BAR ─── */
+.mob-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--accent);padding:12px 24px;text-align:center}
+.mob-bar a{font-family:var(--font-display);font-size:16px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:8px}
+
+/* ─── CONFIRM ─── */
+.confirm{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);align-items:center;justify-content:center;padding:24px}
+.confirm.on{display:flex}
+.confirm-card{background:var(--white);border-radius:var(--radius-lg);padding:44px 36px;max-width:480px;width:100%;text-align:center;box-shadow:var(--shadow-lg)}
+.confirm-card .chk{width:56px;height:56px;background:rgba(34,197,94,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:24px;color:#16a34a}
+.confirm-card h2{font-family:var(--font-display);font-size:26px;font-weight:700;color:var(--dark);text-transform:uppercase;margin-bottom:10px}
+.confirm-card p{font-size:15px;color:var(--muted);line-height:1.5;font-weight:300;margin-bottom:6px}
+.confirm-card .cp{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-family:var(--font-display);font-size:18px;font-weight:700;margin-top:14px}
+.confirm-card .cl{margin-top:20px;background:var(--off-white);border:1px solid var(--light);color:var(--dark);padding:8px 24px;border-radius:6px;cursor:pointer;font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;transition:var(--transition)}
+.confirm-card .cl:hover{border-color:var(--accent);color:var(--accent)}
+
+/* ─── FADE ─── */
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.fade-up.vis{opacity:1;transform:translateY(0)}
+
+/* ─── RESPONSIVE ─── */
+@media(max-width:768px){
+  :root{--header-h:62px}
+  .header-logo-text{display:none}.header-cta{padding:8px 14px;font-size:12px}
+  .hero{padding:60px 20px 56px}.section{padding:56px 20px}
+  .reviews-grid{grid-template-columns:1fr;gap:10px}
+  .hero-cta{padding:16px 32px;font-size:17px}
+  .form-grid{grid-template-columns:1fr;gap:28px}.est-form{padding:24px 18px}
+  .map-wrap iframe{height:260px}.mob-bar{display:block}body{padding-bottom:52px}
+  .steps{flex-direction:column}.step{flex:1 1 auto}
+  .why-grid{grid-template-columns:1fr}.spec-grid{grid-template-columns:1fr}
+  .srv-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+  .top-bar p{font-size:11px;letter-spacing:1.5px}
+  .masonry{columns:1}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="header-logo" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+      <img src="images/primes-logo.png" alt="Primes Auto Service" onerror="this.style.display='none'">
+      <span class="header-logo-text">Primes Auto Service</span>
+    </a>
+    <a href="tel:9802229928" class="header-cta">&#x1F4DE; Call Now &ndash; 980-222-9928</a>
+  </div>
+</header>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <p><strong>Charlotte&rsquo;s One-Stop</strong> Automotive Repair &amp; Custom Finishing Shop</p>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Charlotte&rsquo;s One-Stop Shop for <span>Collision Repair &amp; Automotive Services</span></h1>
+    <p class="hero-sub">From accident repairs to premium finishes, Primes Auto Service handles everything your vehicle needs &mdash; all in one place.</p>
+
+    <div class="rating-block">
+      <div class="rating-row">
+        <span class="rating-num">4.9</span>
+        <div class="rating-stars"><span class="s">&#9733;</span><span class="s">&#9733;</span><span class="s">&#9733;</span><span class="s">&#9733;</span><span class="s">&#9733;</span></div>
+      </div>
+      <p class="rating-label">Google Reviews</p>
+      <p class="rating-sub">Trusted by drivers across the Charlotte area for professional repairs and excellent customer service.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <div class="rev">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Great experience from start to finish. Damon kept me updated throughout the repair and made the entire process smooth. The car looked perfect when I picked it up.&rdquo;</p>
+        <span class="rev-from">Charlotte, NC</span>
+        <svg class="g-mark" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      </div>
+      <div class="rev">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Brandon was extremely helpful explaining the estimate and what needed to be done. Communication was excellent and the repair quality was top notch.&rdquo;</p>
+        <span class="rev-from">Charlotte, NC</span>
+        <svg class="g-mark" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      </div>
+      <div class="rev">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Professional shop with great communication. Damon helped guide me through the process and the vehicle came back looking like new.&rdquo;</p>
+        <span class="rev-from">Charlotte, NC</span>
+        <svg class="g-mark" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      </div>
+      <div class="rev">
+        <div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Highly recommend Primes Auto Service. Brandon kept me informed during the repair and everything turned out great.&rdquo;</p>
+        <span class="rev-from">Charlotte, NC</span>
+        <svg class="g-mark" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      </div>
+    </div>
+
+    <a href="tel:9802229928" class="hero-cta">&#x1F4DE; Call Now &ndash; Speak With an Advisor</a>
+    <div class="hero-meta">
+      Appointments Only &ndash; Please Call to Schedule an Estimate<br>
+      <strong>8844 Mt Holly Road, Charlotte, NC 28214</strong>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO TESTIMONIAL -->
+<section class="video-section">
+  <div class="section-inner fade-up">
+    <span class="section-tag">See It for Yourself</span>
+    <h2 class="section-title">Inside Primes Auto Service</h2>
+    <div class="video-wrap">
+      <video controls playsinline preload="metadata" poster="">
+        <source src="video/primes-testimonial.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- INSURANCE -->
+<section class="section section--gray" id="insurance">
+  <div class="section-inner fade-up">
+    <span class="section-tag">Insurance Assistance</span>
+    <h2 class="section-title">We Handle Insurance Claims</h2>
+    <p class="section-desc">After an accident, dealing with insurance companies can be stressful. Our team helps guide customers through the repair process and keeps communication clear throughout the job.</p>
+    <p class="section-desc">From the initial estimate to final repairs, we help coordinate the process so your vehicle gets repaired properly.</p>
+    <div class="adv-grid">
+      <div class="adv-card"><h4>Damon</h4><p>Customers often appreciate how Damon helps guide them through the insurance process and keeps them informed during repairs.</p></div>
+      <div class="adv-card"><h4>Brandon</h4><p>Brandon is frequently praised for clear communication and helping customers understand each step of the repair process.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" id="why">
+  <div class="section-inner fade-up">
+    <span class="section-tag">Why Drivers Choose Us</span>
+    <h2 class="section-title">Why Primes Auto Service</h2>
+    <p class="section-desc">Everything your vehicle needs &mdash; handled in one location. No more driving between multiple shops.</p>
+    <div class="why-grid">
+      <div class="why-item"><div class="why-dot">&#x1F6E1;</div><div><h4>Insurance Claim Assistance</h4><p>We help coordinate the insurance process so you can focus on your day.</p></div></div>
+      <div class="why-item"><div class="why-dot">&#x1F4AC;</div><div><h4>Clear Communication</h4><p>Stay informed throughout every step of the repair process.</p></div></div>
+      <div class="why-item"><div class="why-dot">&#x1F527;</div><div><h4>Experienced Technicians</h4><p>Skilled professionals who deliver quality results every time.</p></div></div>
+      <div class="why-item"><div class="why-dot">&#x1F3A8;</div><div><h4>High Quality Paint &amp; Body Work</h4><p>Premium paint matching and body work that restores your vehicle&rsquo;s finish.</p></div></div>
+      <div class="why-item"><div class="why-dot">&#x26A1;</div><div><h4>Fast Estimate Process</h4><p>Get your estimate quickly so repairs can begin without delay.</p></div></div>
+      <div class="why-item"><div class="why-dot">&#x1F4CD;</div><div><h4>Trusted Local Charlotte Shop</h4><p>A local shop with a reputation drivers trust and recommend.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section--gray" id="services">
+  <div class="section-inner fade-up">
+    <span class="section-tag">What We Do</span>
+    <h2 class="section-title">Our Services</h2>
+    <div class="srv-grid">
+      <div class="srv"><div class="srv-icon">&#x1F697;</div><h4>Collision Repair</h4><p>Complete collision repair to restore your vehicle after an accident.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F528;</div><h4>Paintless Dent Repair</h4><p>Remove dents without damaging the original paint finish.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F3A8;</div><h4>Paint &amp; Body Work</h4><p>Expert paint matching and body repair for a flawless finish.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F6E1;</div><h4>Bumper Repair</h4><p>Professional bumper repair and replacement services.</p></div>
+      <div class="srv"><div class="srv-icon">&#x2728;</div><h4>Scratch Repair</h4><p>Remove scratches and restore your vehicle&rsquo;s smooth finish.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F48E;</div><h4>Paint Correction</h4><p>Polish and correct paint imperfections for a showroom shine.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F52C;</div><h4>Ceramic Coating</h4><p>Long-lasting protective coating for a high-gloss finish.</p></div>
+      <div class="srv"><div class="srv-icon">&#x2699;&#xFE0F;</div><h4>Powder Coating</h4><p>Durable coating for wheels and metal components.</p></div>
+      <div class="srv"><div class="srv-icon">&#x1F30A;</div><h4>Hydro Dipping</h4><p>Custom patterns and finishes for parts and accessories.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALTY -->
+<section class="section">
+  <div class="section-inner fade-up">
+    <span class="section-tag">Specialty Services</span>
+    <h2 class="section-title">Premium Finishing Services</h2>
+    <div class="spec-grid">
+      <div class="spec"><span class="spec-badge">Protection</span><h4>Ceramic Coating</h4><p>Protect your vehicle&rsquo;s paint with professional ceramic coating that creates a durable high-gloss protective layer.</p><p>Ceramic coatings help protect against UV damage, dirt, and contamination while making your vehicle easier to maintain.</p></div>
+      <div class="spec"><span class="spec-badge">Durability</span><h4>Powder Coating</h4><p>Durable powder coating for wheels and metal components with a finish designed to resist chips, corrosion, and wear better than traditional paint.</p></div>
+      <div class="spec"><span class="spec-badge">Custom</span><h4>Hydro Dipping</h4><p>Custom hydro dipping allows unique patterns and finishes to be applied to automotive parts and accessories.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section section--gray" id="results">
+  <div class="section-inner fade-up">
+    <span class="section-tag">Real Results</span>
+    <h2 class="section-title">Before &amp; After</h2>
+    <p class="section-desc">See the quality of our work firsthand. Click any photo to view full size.</p>
+    <div class="masonry">
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/subaru-wrx-collision.jpg" alt="Subaru WRX rear end collision repair" loading="lazy"><div class="m-info"><span class="m-tag">Collision Repair</span><h4>Subaru WRX &ndash; Rear End Rebuild</h4><p>Full structural rebuild including quarter panel, bumper, and taillight assembly.</p></div></div>
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/mustang-collision.jpg" alt="Ford Mustang front end collision repair" loading="lazy"><div class="m-info"><span class="m-tag">Collision Repair</span><h4>Ford Mustang &ndash; Front End Repair</h4><p>Hood, headlight, fender, and bumper replaced with factory color match.</p></div></div>
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/lexus-es-collision.jpg" alt="Lexus ES rear collision repair" loading="lazy"><div class="m-info"><span class="m-tag">Collision Repair</span><h4>Lexus ES &ndash; Rear Impact Restoration</h4><p>Severe rear-end damage repaired with full bumper, trunk, and taillight restoration.</p></div></div>
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/paint-body-process.jpg" alt="Professional auto body paint process" loading="lazy"><div class="m-info"><span class="m-tag">Paint &amp; Body Work</span><h4>Professional Paint &amp; Body Process</h4><p>From prep and primer to final clear coat &mdash; expert work at every stage.</p></div></div>
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/dodge-charger-collision.jpg" alt="Dodge Charger front end collision repair" loading="lazy"><div class="m-info"><span class="m-tag">Collision Repair</span><h4>Dodge Charger &ndash; Front End Restoration</h4><p>Full front end rebuild including bumper, headlights, hood, and fender.</p></div></div>
+      <div class="m-item" onclick="openLB(this)"><img src="images/gallery/lexus-nx-dent-repair.jpg" alt="Lexus NX side panel dent repair" loading="lazy"><div class="m-info"><span class="m-tag">Paint &amp; Body Work</span><h4>Lexus NX &ndash; Side Panel Repair</h4><p>Door and quarter panel dent repair with full paint blend.</p></div></div>
+    </div>
+  </div>
+</section>
+<div class="lb" id="lb" onclick="closeLB(event)"><button class="lb-x" onclick="closeLB(event)">&#x2715;</button><img id="lbImg" src="" alt=""><div class="lb-cap"><span id="lbTag"></span><h4 id="lbTitle"></h4></div></div>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="section-inner fade-up">
+    <span class="section-tag">How It Works</span>
+    <h2 class="section-title">What To Do After an Accident</h2>
+    <div class="steps">
+      <div class="step"><h4>Call Primes Auto Service</h4></div>
+      <div class="step"><h4>Schedule Your Estimate</h4></div>
+      <div class="step"><h4>We Help Coordinate Insurance</h4></div>
+      <div class="step"><h4>Our Technicians Repair Your Vehicle</h4></div>
+      <div class="step"><h4>Pick Up Your Vehicle Looking Like New</h4></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section form-section" id="estimate">
+  <div class="section-inner">
+    <div class="form-grid">
+      <div class="form-info fade-up">
+        <span class="section-tag">Get Started</span>
+        <h3>Request Your Free Estimate</h3>
+        <p>Fill out the form and our team will review your request and contact you shortly. Upload photos of the damage to help us provide an accurate estimate.</p>
+        <div class="fi"><span class="fi-icon">&#x1F4DE;</span><a href="tel:9802229928" style="color:var(--accent);font-weight:600;">980-222-9928</a></div>
+        <div class="fi"><span class="fi-icon">&#x1F4CD;</span>8844 Mt Holly Road, Charlotte, NC 28214</div>
+        <div class="fi"><span class="fi-icon">&#x1F550;</span>8 AM &ndash; 4 PM &nbsp;|&nbsp; Appointments Only</div>
+        <div class="fi"><span class="fi-icon">&#x1F4E7;</span>primeauto704@gmail.com</div>
+      </div>
+      <form class="est-form fade-up" id="estimateForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="New Estimate Request – Primes Auto Service">
+        <input type="hidden" name="from_name" value="Primes Auto Service Website">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <h3>Estimate Request</h3>
+        <div class="fg"><label for="name">Name *</label><input type="text" id="name" name="name" required placeholder="Your full name"></div>
+        <div class="fg"><label for="phone">Phone Number *</label><input type="tel" id="phone" name="phone" required placeholder="(___) ___-____"></div>
+        <div class="fg"><label for="email">Email Address *</label><input type="email" id="email" name="email" required placeholder="you@email.com"></div>
+        <div class="fg"><label for="vehicle">Vehicle Make &amp; Model *</label><input type="text" id="vehicle" name="vehicle" required placeholder="e.g. 2022 Toyota Camry"></div>
+        <div class="fg"><label for="damage">Description of Damage *</label><textarea id="damage" name="damage" required placeholder="Describe the damage to your vehicle..."></textarea></div>
+        <div class="fg"><label for="photos">Upload Photos</label><input type="file" id="photos" name="attachment" multiple accept="image/*"></div>
+        <button type="submit" class="form-btn" id="submitBtn">Submit Estimate Request</button>
+        <p class="form-note">We&rsquo;ll review your request and get back to you as soon as possible.</p>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section" id="location">
+  <div class="section-inner fade-up">
+    <span class="section-tag">Find Us</span>
+    <h2 class="section-title">Visit Primes Auto Service</h2>
+    <div class="loc-row">
+      <div class="loc-addr"><h4>8844 Mt Holly Road</h4><p>Charlotte, NC 28214</p><p style="margin-top:4px;font-size:13px;color:var(--muted);">Appointments Only &ndash; Please Call to Schedule an Estimate</p></div>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=8844+Mt+Holly+Road+Charlotte+NC+28214" target="_blank" rel="noopener" class="dir-btn">&#x1F4CD; Get Directions</a>
+    </div>
+    <div class="map-wrap"><iframe src="https://maps.google.com/maps?q=8844+Mt+Holly+Road,+Charlotte,+NC+28214&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" title="Primes Auto Service Location"></iframe></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <span class="section-tag">Ready?</span>
+  <h2 class="section-title">Need Help With Your Vehicle?</h2>
+  <p>Call Primes Auto Service today to schedule your estimate and get your vehicle repaired properly.</p>
+  <a href="tel:9802229928" class="hero-cta">&#x1F4DE; Call Now &ndash; 980-222-9928</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>&copy; 2026 Primes Auto Service &nbsp;|&nbsp; 8844 Mt Holly Road, Charlotte, NC 28214 &nbsp;|&nbsp; <a href="tel:9802229928">980-222-9928</a></p>
+  <p style="margin-top:6px;">Appointments Only &nbsp;|&nbsp; 8 AM &ndash; 4 PM</p>
+</footer>
+
+<!-- MOBILE BAR -->
+<div class="mob-bar"><a href="tel:9802229928">&#x1F4DE; Call Now &ndash; 980-222-9928</a></div>
+
+<!-- CONFIRMATION -->
+<div class="confirm" id="confirmOverlay">
+  <div class="confirm-card">
+    <div class="chk">&#x2713;</div>
+    <h2>Thank You</h2>
+    <p><strong>Your Estimate Request Has Been Sent</strong></p>
+    <p>A member of our team will review your request and contact you shortly.</p>
+    <p>If you need immediate assistance please call:</p>
+    <a href="tel:9802229928" class="cp">&#x1F4DE; 980-222-9928</a><br>
+    <button class="cl" onclick="document.getElementById('confirmOverlay').classList.remove('on');">Close</button>
+  </div>
+</div>
+
+<script>
+// Fade animations
+var obs=new IntersectionObserver(function(e){e.forEach(function(en){if(en.isIntersecting)en.target.classList.add('vis');});},{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+
+// Phone format
+document.getElementById('phone').addEventListener('input',function(e){
+  var x=e.target.value.replace(/\D/g,'').substring(0,10),f='';
+  if(x.length>0)f='('+x.substring(0,3);
+  if(x.length>=3)f+=') '+x.substring(3,6);
+  if(x.length>=6)f+='-'+x.substring(6,10);
+  e.target.value=f;
+});
+
+// Lightbox
+function openLB(el){
+  var i=el.querySelector('img'),t=el.querySelector('.m-tag'),h=el.querySelector('h4');
+  document.getElementById('lbImg').src=i.src;
+  document.getElementById('lbTag').textContent=t?t.textContent:'';
+  document.getElementById('lbTitle').textContent=h?h.textContent:'';
+  document.getElementById('lb').classList.add('on');
+  document.body.style.overflow='hidden';
+}
+function closeLB(e){
+  if(e.target===document.getElementById('lb')||e.target.closest('.lb-x')){
+    document.getElementById('lb').classList.remove('on');
+    document.body.style.overflow='';
+  }
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.getElementById('lb').classList.remove('on');document.body.style.overflow='';}});
+
+// Form
+var form=document.getElementById('estimateForm'),btn=document.getElementById('submitBtn'),st=document.getElementById('formStatus');
+form.addEventListener('submit',function(e){
+  e.preventDefault();btn.disabled=true;btn.textContent='Sending...';
+  st.className='form-status';st.style.display='none';
+  fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form)})
+    .then(function(r){return r.json();})
+    .then(function(d){
+      if(d.success){document.getElementById('confirmOverlay').classList.add('on');form.reset();st.className='form-status success';st.textContent='Estimate request sent successfully!';}
+      else{st.className='form-status error';st.textContent='Something went wrong. Please call us at 980-222-9928.';}
+      st.style.display='block';
+    })
+    .catch(function(){st.className='form-status error';st.textContent='Network error. Please call us at 980-222-9928.';st.style.display='block';})
+    .finally(function(){btn.disabled=false;btn.textContent='Submit Estimate Request';});
+});
+</script>
+</body>
+</html>
